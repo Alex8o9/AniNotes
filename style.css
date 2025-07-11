@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    letter-spacing: 3px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-image: url('https://images.unsplash.com/photo-1625225230517-7426c1be750c?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Zm9ybXxlbnwwfHwwfHx8MA%3D%3D');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.login {
+    position: absolute;
+    background-color: transparent;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    min-height: 50%;
+    min-width: 70%;
+    backdrop-filter: blur(40px);
+    border: 0.3px solid black;
+    box-shadow: 0 0 40px black;
+    border-radius: 10px;
+
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    margin: 5px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid black;
+    padding: 20px 40px;
+    outline: none;
+    transition: 0.2s all;
+}
+
+button {
+    padding: 10px 30px;
+    background-color: transparent;
+    border-top: 0.2px solid black;
+    border-left: 0.2px solid black;
+    border-bottom: 0.2px solid white;
+    border-right: 0.2px solid white;
+    transition: 0.2s all;
+}
+
+input:hover {
+    scale: 1.03;
+}
+
+button:hover {
+    box-shadow: 0 0 40px black;
+    scale: 1.02;
+    border-radius: 5px;
+    border-bottom: 0.2px solid black;
+    border-right: 0.2px solid black;
+    border-left: 0.2px solid white;
+    border-top: 0.2px solid white;
+}
+
+label {
+    font-size: 16px;
+}
+
+.signup {
+    position: absolute;
+    background-color: transparent;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    min-height: 50%;
+    min-width: 70%;
+    backdrop-filter: blur(40px);
+    border: 0.3px solid black;
+    box-shadow: 0 0 40px black;
+    border-radius: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+p{
+    font-size: 10px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+u{
+    font-size: 12px;
+    text-decoration: bold;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+h3{
+    color: white;
+    background-color: black;
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+    border: 0.2px solid black;
+    border-radius: 15px;
+    box-shadow: 0 0 40px black;
+}
+
+ul li button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 3px 7px;
+  margin-left: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+ul li button:hover {
+  background: darkred;
+}
+#noteInput {
+  width: 100%;
+  min-height: 100px;
+  padding: 15px 20px;
+  border-radius: 12px;
+  border: 2px solid #667eea;
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  resize: vertical;
+  box-shadow: inset 0 2px 5px rgba(102,126,234,0.2);
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#noteInput:focus {
+  outline: none;
+  border-color: #4b3b94;
+  box-shadow: 0 0 10px rgba(102,126,234,0.6);
+  background-color: #f9faff;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login || SignUp</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="/socket.io/socket.io.js"></script>
+</head>
+<body>
+  <div class="login">
+    <h3>Login</h3>
+    <label for="user">Username:</label>
+    <input type="text" id="user" />
+    <label for="pass">Password:</label>
+    <input type="text" id="pass" />
+    <p>Don't have account yet? <u onclick="createAcc()">Create Account</u></p>
+    <button onclick="login()">Login</button>
+  </div>
+
+  <div class="signup hidden">
+    <h3>SignUp</h3>
+    <label for="ruser">Username:</label>
+    <input type="text" id="ruser" />
+    <label for="rpass">Password:</label>
+    <input type="text" id="rpass" />
+    <p>Already have an account? <u onclick="goBackToLogin()">Login</u></p>
+    <button onclick="signUp()">SignUp</button>
+  </div>
+<div class="notes hidden" id="notesBox">
+    <button onclick="clearAllNotes()">🧹 Clear All Notes</button>
+<button onclick="deleteAccount()">🗑 Delete Account</button>
+
+  <h3>Your Notes</h3>
+  <textarea id="noteInput" placeholder="Write your note..."></textarea>
+  <button onclick="saveNote()">Save Note</button>
+  
+  <!-- ✅ This is where notes + delete buttons will go -->
+  <ul id="noteList"></ul>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
